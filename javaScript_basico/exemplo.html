@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+     <style>
+          .numero {
+               width: 200px;
+               height: 200px;
+               border: 1px solid #000;
+               float: left;
+               margin-right: 10px;
+               font-size: 100px;
+               text-align: center;
+               line-height: 200px;
+          }
+          #n1 {
+               
+               background-color: #EEE;
+          }
+
+          #btn1 {
+               width: 418px;
+               margin-top: 3px;
+          }
+     </style>
+     <script src="exemplo.js"></script>
+</head>
+<body onload="resetar();">
+     <input type="text" class="numero" id="n1" value="0" disabled>
+     <input type="text" class="numero" id="n2">
+     <div style="clear: both">
+
+     </div>
+     <button id="btn1" onclick="verificar();">Verificar</button>
+</body>
+</html>
