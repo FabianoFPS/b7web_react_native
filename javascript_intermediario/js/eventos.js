@@ -55,3 +55,23 @@ function presionouBotão(event){
      console.log("SHIFT ativo");
      return;
 }
+
+function carregou() {
+     alert("PÁGINA CARREGADA");
+}
+
+function fechou() {
+     
+}
+
+function mudouOpcao(objeto) {
+     console.log("Selecionou: "+objeto.value);
+}
+
+function focou(objeto) {
+     console.log("Focou no elemento de id:"+objeto.id);
+}
+
+function desfocou() {
+     console.log("Desfocou o campo");
+}

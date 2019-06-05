@@ -7,8 +7,9 @@
      <title>Document</title>
      <script src="js/eventos.js"></script>
 </head>
-<body>
+<body onload="carregou();" onunload="fechou();">
      <div>
+          <h1>Eventos de mouse</h1>
           <button 
                onmousedown="apertouMouse();" 
                onmouseup="soltouMouse();" 
@@ -25,6 +26,7 @@
                ondblclick="cliqueDuplo();"
           >Botão 3</button>
      </div>
+     <h1>Eventos de teclado</h1>
      <div style="margin-top: 20px;">
           <form action="" method="post">
                <input type="text" 
@@ -32,6 +34,24 @@
                     onkeyup="soltouBotao(event);" 
                     onkeypress="presionouBotão(event);" 
                />
+          </form>
+     </div>
+     <div>
+          <h1>Eventos de formulários</h1>
+          <form method="post" onsubmit="return false">
+               <input type="text" id="id_input_text" onfocus="focou(this);" onblur="desfocou();">
+               <br>
+               <br>
+               <select name="cidade" id="id_select" name="name_select" onchange="mudouOpcao(this);">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="bh">Belo Horizonte</option>
+                    <option value="rc">Recife</option>
+                    <option value="rs">Rio Grande do Sul</option>
+               </select>
+               <br>
+               <br>
+               <input type="submit" value="Enviar">
           </form>
      </div>
 </body>
