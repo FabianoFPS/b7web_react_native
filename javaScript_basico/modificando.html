@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="js/modificando_html.js">
+
+    </script>
+  </head>
+  <body>
+    <div class="" id ="area">
+      Algum conteudo aqui...
+    </div>
+    <br><br>
+
+    <button type="button" name="button" onclick="document.getElementById('area').innerHTML=prompt('Qual seu nome?');">Fazer a ação</button>
+    <br>
+    <button type="button" name="button" onclick="this.innerHTML=prompt('Qual o nome do botão?');">Fazer a ação pelo this</button>
+    <br>
+    <button type="button" name="button" onclick="fazerAcao('Fabiano', 35);">Fazer a ação por function javascript</button>
+  </body>
+</html>
