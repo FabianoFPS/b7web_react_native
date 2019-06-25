@@ -1,5 +1,9 @@
 const _metodoPrivado = Symbol('metodoPrivado');
 
+//https://medium.com/front-end-weekly/private-methods-in-es6-and-writing-your-own-db-b2e30866521f
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+//https://developer.mozilla.org/pt-BR/docs/Glossario/Symbol
+
 class Animal {
     constructor(tipo, pernas){
         this.tipo = tipo;

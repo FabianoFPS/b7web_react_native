@@ -11,7 +11,7 @@ function requisitar(){
 
     fetch(URL, PARAMETROS)
     .then((resposta) => resposta.json())
-    .then((json) => console.log(json));
+    .then((json) => console.log("requisitar1: \n"+json));
     console.log('[1] Executa antes do fetch?');
     
 }
@@ -31,7 +31,7 @@ async function requisitar2(){
 
     const resposta = await fetch(URL, PARAMETROS);
     const j = resposta.json();
-    console.log(j);
+    console.log("requisitar2: \n"+j);
     
     //return json;
     console.log('[2] Executa antes do fetch?');
